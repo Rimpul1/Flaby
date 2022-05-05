@@ -1,0 +1,751 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+h1{
+    font-size: 40px;
+    font-weight: 500;
+    color: rgb(58, 15, 15);
+    font-family: 'Raleway', sans-serif;
+}
+h2{
+    font-size: 26px;
+    font-weight: 500;
+    color: rgb(44, 8, 8);
+    font-family: 'Raleway', sans-serif;
+}
+h3{
+    font-size: 24px;
+    font-weight: 500;
+    color: rgb(8, 8, 8);
+    font-family: 'Raleway', sans-serif;
+}
+h4{
+    font-size: 22px;
+    font-weight: 500;
+    color: rgb(41, 6, 6);
+    font-family: 'Raleway', sans-serif;
+}
+h5{
+    font-size: 18px;
+    font-weight: 500;
+    color: rgb(41, 6, 6);
+    font-family: 'Raleway', sans-serif;
+}
+p{
+    font-size: 14px;
+    font-weight: 500;
+    color: rgb(0, 0, 0);
+    font-family: 'Raleway', sans-serif;
+}
+.container{
+    width: 1170px;
+    margin: 0 auto;
+}
+nav{
+    position: fixed;
+    width: 100%;
+    height: 120px;
+    z-index: 999;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 120px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.521);
+}
+.nav_item{
+    display: inline-block;
+    margin-left: 35px;
+}
+.button_nav{
+    padding-left: 35px;
+    border-radius: 10px;
+    font-size: 17px;
+    font-weight: 600;
+    box-shadow: none;
+    background-color: transparent;
+    margin-left: 30px;
+}
+.button_nav:hover{
+    background-color: #4ca3e6;
+    transition: 0.5s;
+}
+a{
+    font-family: "Open Sans", sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+    text-decoration: none;
+    display: inline-flex;
+    font-family: 'Raleway', sans-serif;
+}
+ul{
+    list-style: none;
+    font-family: 'Raleway', sans-serif;
+}
+.section_heading{
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+.section_heading:after{
+    content: "";
+    display: inline-block;
+    height: 2px;
+    width: 30px;
+    background-color: #42a8f6;
+}
+.section_title{
+    padding-bottom: 15px;
+    font-size: 18px;
+    color: #7c7c7c;
+    font-weight: 400;
+}
+.header_img{
+    position: relative;
+    height: 683px;
+    width: 450px;
+}
+.logo{
+    width: 165px;
+    height: 50px;
+}
+.header_img img{
+    position: absolute;
+    top: 0;
+}
+header{
+    background-color: #42a8f6;
+    position: relative;
+    overflow: hidden;
+    padding-top: 255px;
+    background-image: url(./img/Ellipse1.png);
+    background-size: cover;
+    background-position: 365px -265px;
+    background-repeat: no-repeat;
+}
+.header_pencil {
+    position: absolute;
+    left: 0;
+    bottom: 300px;
+}
+.header_headphone{
+    position: absolute;
+    width: 260px;
+    height: 250px;
+    right: 1920px;
+    bottom: 816px;
+    left: 0;
+    transform: rotate(30deg);
+    position: absolute;
+}
+.header_headphone img{
+    width: 577px;
+    height: 656px;
+    position: absolute;
+}
+.header_earphone{
+    position: absolute;
+    left: 1771px;
+}
+.header_earphone img{
+    position: absolute;
+}
+.header_pencil2{
+    position: absolute;
+    left: 0;
+    bottom: 300px;
+}
+.header_pencil img{
+    position: absolute;
+}
+.header_pencil2 img{
+    position: absolute;
+}
+.header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header_title{
+    color: white;
+    padding-bottom: 45px;
+    font-size: 40px;
+}
+.header_text{
+    padding-bottom: 75px;
+    padding-top: 25px;
+}
+.header_description{
+    color: white;
+    font-size: 26px;
+    font-weight: 400;
+    padding-bottom: 45px;
+}
+.header_button img{
+    vertical-align: middle;
+    margin-right: 25px;
+}
+.header_button{
+    font-size: 20px;
+    font-weight: 500;
+    width: 240px;
+    height: 80px;
+    border-radius: 10px;
+    border: none;
+    transition: 0.3s;
+    cursor: pointer;
+    background-color: #ffffff;
+    transition: 0.5s;
+    margin-right: 15px;
+    font-family: 'Raleway', sans-serif;
+    color: black;
+}
+.header_button:hover{
+    box-shadow: 0 0 7px 0;
+    background-color: rgb(238, 238, 238);
+}
+.header_button:active{
+    background-color: #7991a3;
+    fo
+}
+.header_button2{
+    font-size: 20px;
+    font-weight: 500;
+    width: 240px;
+    height: 80px;
+    border-radius: 10px;
+    border: none;
+    background-color: #4f9edb;
+    color: white;
+    transition: 0.5s;
+    cursor: pointer;
+    font-family: 'Raleway', sans-serif;
+}
+.header_button2:hover{
+    box-shadow: 0 0 7px 0 black;
+    background-color: #7aa6c7;
+}
+.header_button2:active{
+    background-color: white;
+    color: black;
+    transition: 0.5s;
+}
+.our_sevices{
+    padding-bottom: 170px;
+}
+.sevices_title{
+    padding-top: 30px;
+    padding-bottom: 25px;
+    font-weight: 600;
+}
+.sevices_title1{
+    padding-top: 50px;
+    padding-bottom: 25px;
+    font-weight: 600;
+}
+.sevices_text{
+    color: black;
+}
+.sevices_cards{
+    display: flex;
+    justify-content: space-between;
+}
+.sevices_card{
+    text-align: center;
+    width: 300px;
+    height: 250px;
+    line-height: 25px;
+}
+.customiz_cards{
+    display: flex;
+    justify-content: space-between;
+}
+.customiz_img{
+    flex-shrink: 0;
+    flex-grow: 1;
+    flex-basis: 50%;
+    position: relative;
+}
+.customiz_img img{
+    position: absolute;
+    left: -595px;
+    top: 0;
+}
+.customiz{
+    background-image: url(./img/Shape.png);
+    padding-top: 130px;
+    padding-bottom: 170px;
+    background-size: cover;
+    background-color: #fafbfb;
+    background-position: 20px;
+}
+.customiz_card_text{
+    width: 700px;
+}
+.customiz_start{
+    padding-bottom: 20px;
+    font-size: 22px;
+    color: #c0c1c1;
+}
+.customiz_beginer{
+    padding-bottom: 20px;
+    font-size: 32px;
+}
+.customiz_title{
+    padding-bottom: 60px;
+    color: #868787;
+    font-size: 20px;
+}
+.customiz_item{
+    margin-bottom: 25px;
+}
+.customiz_item::before{
+    content: url(./img/Ellipse-3.png);
+    width: 30px;
+    height: 30px;
+    margin-right: 15px;
+}
+.customiz_list{
+    list-style: none;
+    padding-bottom: 50px;
+}
+.customiz_heading img{
+    width: 70%;
+    padding-right: 1500px;
+}
+button{
+    padding: 15px 30px;
+    border-radius: 25px;
+    background-color: #66d4f4;
+    font-size: 14px;
+    border: none;
+    box-shadow: 0px 8px 5px 0px rgba(100, 100, 100, 0.158);
+    cursor: pointer;
+    color: white;
+}
+.services{
+    background-color: white;
+    padding-bottom: 40px;
+}
+.services_card{
+    width: 300px;
+    height: 140px;
+    line-height: 25px;
+    padding-bottom: 100px;
+    display: flex;
+}
+.services_cards{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+.services_card_img{
+    margin-right: 25px;
+}
+.services_item{
+    padding-bottom: 20px;
+    font-size: 18px;
+    font-weight: 500;
+}
+.services_text{
+    font-size: 14px;
+    color: #c0c1c1;
+}
+.custumer{
+    padding-bottom: 120px;
+    background-image: url(./img/pattern.png);
+}
+.custumer_card{
+    width: 724px;
+    height: 350px;
+    border-radius: 12px;
+    background-color: #ffffff;
+    text-align: center;
+    box-shadow: -2px 0px 38px -7px #e7eced;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: 3;
+}
+.custumer_title{
+    font-size: 20px;
+    font-weight: 700;
+}
+.custumer_text{
+    padding-bottom: 40px;
+    font-size: 15px;
+    color: #9b9b9b;
+}
+.costumer_descrip{
+    font-size: 18px;
+    color: #9b9b9b;
+    text-align: center;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.custumer_img{
+    height: 60px;
+}
+.custumer_img img{
+    top: -50px;
+    position: relative;
+}
+.custumer_cards{
+    position: relative;
+    height: 350px;
+}
+.custumer_cards::after{
+    width: 848px;
+    height: 245px;
+    content: "";
+    background-color:#f6f9f9;
+    display: block;
+    position: absolute;
+    box-shadow: -1px 0px 31px -16px #B5BFB5;
+    top: 50px;
+    left: 50%;
+    transform: translate(-50%);
+    z-index: 1;
+    border-radius: 12px;
+}
+.custumer_cards::before{
+    width: 790px;
+    height: 310px;
+    content: "";
+    background-color: #f9fafa;
+    display: block;
+    box-shadow: -1px 0px 31px -16px #B5BFB5;
+    top: 23px;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%);
+    z-index: 2;
+    border-radius: 12px;
+}
+.custumer_buttons{
+
+}
+.download_heading{
+    display: flex;
+    justify-content: space-evenly;
+    padding-top: 120px;
+    padding-bottom: 120px;
+}
+.download_text{
+    height: 300px;
+    width: 450px;
+    line-height: 25px;
+}
+.download_start{
+    padding-bottom: 20px;
+    color: #c4c4c4;
+}
+.download_beginer{
+    padding-bottom: 20px;
+}
+.download_description{
+    padding-bottom: 20px;
+    color: #7c7c7c;
+}
+.pricing_cards{
+    display: flex;
+    justify-content: space-between;
+}
+.pricing_heading{
+    padding-bottom: 110px;
+    text-align: center;
+}
+.pricing{
+    padding-bottom: 120px;
+    background-image: url(./img/pattern3.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.pricing_title{
+    font-size: 18px;
+    font-weight: 400;
+    padding-bottom: 10px;
+}
+.pricing_text{
+    padding-bottom: 10px;
+}
+.pricing_card{
+    width: 320px;
+    height: 580px;
+    background-color: #ffffff;
+    background-image: url(./img/pattern2.png);
+    background-repeat: no-repeat;
+    background-position: 10px -100px;
+    border-radius: 17px;
+    text-align: center;
+    transition: 0.5s;
+}
+.pricing_card:hover{
+    transform: scale(1.1);
+    box-shadow: 0px -5px 57px 7px #ddebee;
+}
+.pricing_card img{
+    padding-top: 50px;
+    padding-bottom: 55px;
+}
+.pricing_card_title{
+    font-size: 16px;
+    font-weight: 700;
+}
+.pricing_card_text span{
+    font-size: 72px;
+}
+.pricing_card_text span::before{
+    content: "$";
+    font-size: 25px;
+    vertical-align: super;
+}
+.pricing_card_list{
+    line-height: 35px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+.pricing_button{
+    padding-left: 40px;
+    padding-right: 40px;
+}
+.sub{
+    padding-bottom: 80px;
+}
+    .sub_form{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+input{
+    font-size: 14px;
+    padding-left: 110px;
+    padding-right: 110px;
+    padding-top: 33px;
+    padding-bottom: 33px;
+    border-radius: 50px;
+    border: none;
+    text-align: center;
+    outline: none;
+    margin-bottom: 30px;
+    width: 370px;
+    box-sizing: border-box;
+}
+.button_form{
+    background-color: #42a8f6;
+    font-weight: 600;
+    font-size: 16px;
+    color: white;
+    box-shadow: 0px 8px 5px 0px rgba(100, 100, 100, 0.158);
+    transition: 0.7s;
+    width: 370px;
+}
+.button_form:hover{
+    background-color: #30a7a7;
+    cursor: pointer;
+}
+.sub_cards_list{
+    padding-top: 70px;
+    padding-bottom: 70px;
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #dfdfdf;
+    border-bottom: 1px solid #dfdfdf;
+}
+.sub_card_list{
+    line-height: 30px;
+    padding-right: 30px;
+    padding-left: 30px;
+    width: 180px;
+    box-sizing: border-box;
+}
+.sub_card_list:first-child{
+    width: 270px;
+}
+.sub_title{
+    padding-bottom: 30px;
+    font-size: 20px;
+    font-weight: 700;
+}
+.sub_link{
+    font-size: 14px;
+    font-weight: 500;
+    color: #7c7c7c;
+    font-size: 14px;
+    font-weight: 500;
+}
+a.sub_card_icons{
+    font-size: 35px;
+    margin-right: 17px;
+    background-color: #66d4f4;
+    width: 36px;
+    height: 36px;
+    text-align: right;
+    border-radius: 30px;
+}
+a{
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+    text-decoration: none;
+}
+.sub_card_list img{
+    height: 47px;
+    width: 154px;
+    margin-bottom: 15px;
+}
+.sub_text{
+    font-size: 14px;
+    font-weight: 500;
+    height: 70px;
+    width: 210px;
+    padding-bottom: 30px;
+}
+.footer_list{
+    display: flex;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.footer_item:not(:last-child)::after{
+    content: "|";
+    margin-left: 10px;
+    margin-right: 10px;
+}
+@media screen and (max-width: 1200px){
+    .container {
+        width: 960px;
+    }
+    .nav_link {
+        font-size: 15px;
+    }
+    .header_headphone {
+        display: none;
+    }
+    .header_pencil {
+        display: none;
+    }
+    .header_pencil2 {
+        display: none;
+    }
+    .header_earphone {
+        display: none;
+    }
+    .pricing_card {
+        width: 283px;
+    }
+@media screen and (max-width: 768px){
+    .container {
+        width: 550px;
+    }
+    .nav_list{
+        display: none;
+    }
+    .header_button{
+        margin-bottom: 20px;
+    }
+    .services_card{
+        width: 250px;
+        margin-left: 25px;
+    }
+    .customiz_img img {
+        left: -682px;
+    }
+    .custumer_cards::before{
+        display: none;
+    }
+    .custumer_cards::after{
+        display: none;
+    }
+    .download_heading{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .pricing_cards {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .pricing_card{
+        width: 335px;
+        margin-bottom: 55px;
+    }
+    .sub_cards_list {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .sub_card_list {
+        margin-bottom: 50px;
+    }
+}
+@media screen and (max-width: 576px){
+    .container {
+        width: 100%;
+    }
+    .sevices_cards{
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        flex-direction: column;
+    }
+    .sevices_card{
+        width: 286px;
+        margin-bottom: 50px;
+    }
+    .custumer_card{
+        width: 502px;
+        height: 374px;
+        line-height: 30px;
+    }
+@media screen and (max-width: 425px){
+    .container {
+        width: 100%;
+    }
+    .header_text{
+        padding: 15px;
+    }
+    .header_buttons{
+        padding: 15px;
+    }
+    .customiz {
+        padding-bottom: 70px;
+    }
+    .customiz_img img {
+        left: -729px;
+    }
+    .customiz_list {
+        padding-bottom: 0;
+    }
+    .customiz_beginer {
+        font-size: 30px;
+    }
+    .customiz_title {
+        padding-bottom: 15px;
+    }
+    .services_item{
+        font-size: 22px;
+    }
+    .services_text{
+        font-size: 18px;
+    }
+    .services_card {
+        width: 385px;
+        margin-left: 25px;
+    }
+    .custumer_card {
+        width: 376px;
+        height: 436px;
+    }
+    .download_img img{
+        width: 100%;
+    }
+    .download_start, .download_beginer{
+        text-align: center;
+    }
+    .download_description{
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
