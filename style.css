@@ -1,3 +1,7 @@
+html, body{
+        scroll-behavior: smooth;
+        overflow-x: hidden;
+}
 *{
     margin: 0;
     padding: 0;
@@ -42,34 +46,74 @@ p{
     width: 1170px;
     margin: 0 auto;
 }
-nav{
-    position: fixed;
-    width: 100%;
-    height: 120px;
-    z-index: 999;
+
+/* БУРГЕР МЕНЮ  */
+
+.burger{
+    display: none;
+}
+
+.nav_menu.active{
+    max-height: 999px;
 }
 .navbar{
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 120px;
+    transition: 0.3s;
+
     border-bottom: 1px solid rgba(255, 255, 255, 0.521);
 }
+
+.nav_item{
+    display: inline-block;
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 15px;
+}
+.nav_item:hover::after{
+    transform: translate(0);
+}
+.nav_item::after{
+    position: absolute;
+    content: "";
+    display: block;
+    width: 100%;
+    height: 2px;
+    transform: translate(-100%);
+    transition: 0.5s;
+}
+
+nav{
+    width: 100%;
+    background-color: transparent;
+    position: fixed;
+    top: 0;
+    z-index: 999;
+    transition: 0.5s;
+}
+
 .nav_item{
     display: inline-block;
     margin-left: 35px;
 }
+/* БУРГЕР МЕНЮ  */
+
+
+
 .button_nav{
-    padding-left: 35px;
+    padding-left: 25px;
+    padding-right: 25px;
     border-radius: 10px;
     font-size: 17px;
     font-weight: 600;
     box-shadow: none;
-    background-color: transparent;
-    margin-left: 30px;
+    background-color:#4ca3e6;
 }
 .button_nav:hover{
-    background-color: #4ca3e6;
+    box-shadow: 0 0 7px 0 black;
+    background-color: #7aa6c7;
     transition: 0.5s;
 }
 a{
@@ -133,13 +177,9 @@ header{
 }
 .header_headphone{
     position: absolute;
-    width: 260px;
-    height: 250px;
-    right: 1920px;
-    bottom: 816px;
+    top: -300px;
     left: 0;
     transform: rotate(30deg);
-    position: absolute;
 }
 .header_headphone img{
     width: 577px;
@@ -209,7 +249,6 @@ header{
 }
 .header_button:active{
     background-color: #7991a3;
-    fo
 }
 .header_button2{
     font-size: 20px;
@@ -256,7 +295,6 @@ header{
 .sevices_card{
     text-align: center;
     width: 300px;
-    height: 250px;
     line-height: 25px;
 }
 .customiz_cards{
@@ -292,12 +330,17 @@ header{
 }
 .customiz_beginer{
     padding-bottom: 20px;
-    font-size: 32px;
+    font-size: 25px;
 }
 .customiz_title{
     padding-bottom: 60px;
     color: #868787;
-    font-size: 20px;
+    font-size: 17px;
+}
+.customiz_button:hover{
+    box-shadow: 0 0 7px 0 black;
+    background-color: #7aa6c7;
+    transition: 0.5s;
 }
 .customiz_item{
     margin-bottom: 25px;
@@ -355,19 +398,16 @@ button{
     color: #c0c1c1;
 }
 .custumer{
-    padding-bottom: 120px;
+    margin-bottom: 100px;
     background-image: url(./img/pattern.png);
 }
 .custumer_card{
-    width: 724px;
-    height: 350px;
+    width: 720px;
     border-radius: 12px;
-    background-color: #ffffff;
     text-align: center;
-    box-shadow: -2px 0px 38px -7px #e7eced;
     position: absolute;
-    top: 0;
     left: 50%;
+    top: 0;
     transform: translate(-50%);
     z-index: 3;
 }
@@ -387,6 +427,9 @@ button{
     padding-left: 50px;
     padding-right: 50px;
 }
+
+/* СЛАЙДЕР */
+
 .custumer_img{
     height: 60px;
 }
@@ -394,45 +437,93 @@ button{
     top: -50px;
     position: relative;
 }
-.custumer_cards{
-    position: relative;
-    height: 350px;
-}
-.custumer_cards::after{
-    width: 848px;
-    height: 245px;
-    content: "";
-    background-color:#f6f9f9;
-    display: block;
-    position: absolute;
-    box-shadow: -1px 0px 31px -16px #B5BFB5;
-    top: 50px;
-    left: 50%;
-    transform: translate(-50%);
-    z-index: 1;
-    border-radius: 12px;
-}
-.custumer_cards::before{
-    width: 790px;
-    height: 310px;
-    content: "";
-    background-color: #f9fafa;
-    display: block;
-    box-shadow: -1px 0px 31px -16px #B5BFB5;
-    top: 23px;
-    left: 50%;
-    position: absolute;
-    transform: translate(-50%);
-    z-index: 2;
-    border-radius: 12px;
-}
-.custumer_buttons{
+.swiper {
+    width: 750px;
+  }
 
+  .swiper-slide {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 25px!important;
+    font-size: 22px;
+    font-weight: bold;
+    color: #fff;
+    height: 350px;
+    overflow: visible!important;
+  }
+    .swiper-slide-shadow{
+        border-radius: 20px!important;
+  }
+
+  .swiper-slide:nth-child(1n) {
+    background-color: #ffffff!important;
+  }
+
+  .swiper-slide:nth-child(2n) {
+    background-color: #ffffff!important;
+  }
+
+  .swiper-slide:nth-child(3n) {
+    background-color: #ffffff!important;
+  }
+
+  .swiper-slide:nth-child(4n) {
+    background-color: #ffffff!important;
+  }
+
+  .swiper-slide:nth-child(5n) {
+    background-color: #ffffff!important;
+  }
+  /* СЛАЙДЕР */
+
+
+
+.custumer_buttons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 45px;
+    padding-bottom: 50px;
+
+}
+.custumer_button1:hover {
+    color: gray;
+}
+.custumer_button2:hover{
+    color: gray;
+}
+.custumer_button1 {
+    padding: 0;
+    background-color: transparent;
+    color: black;
+    margin-right: 30px;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    font-size: 17px;
+    font-weight: 500;
+}
+.custumer_button2 {
+    padding: 0;
+    background-color: transparent;
+    color: black;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    font-size: 17px;
+    font-weight: 500;
+}
+.fa-arrow-left{
+    margin-right: 15px;
+}
+.fa-arrow-right{
+    margin-left: 15px;
 }
 .download_heading{
     display: flex;
     justify-content: space-evenly;
-    padding-top: 120px;
+    padding-top: 100px;
     padding-bottom: 120px;
 }
 .download_text{
@@ -512,6 +603,12 @@ button{
 .pricing_button{
     padding-left: 40px;
     padding-right: 40px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.pricing_button:hover{
+    box-shadow: 0 0 7px 0 black;
+    background-color: #7aa6c7;
 }
 .sub{
     padding-bottom: 80px;
@@ -545,7 +642,8 @@ input{
     width: 370px;
 }
 .button_form:hover{
-    background-color: #30a7a7;
+    box-shadow: 0 0 7px 0 black;
+    background-color: #7aa6c7;
     cursor: pointer;
 }
 .sub_cards_list{
@@ -581,11 +679,7 @@ input{
 a.sub_card_icons{
     font-size: 35px;
     margin-right: 17px;
-    background-color: #66d4f4;
-    width: 36px;
-    height: 36px;
-    text-align: right;
-    border-radius: 30px;
+    color: #66d4f4;
 }
 a{
     font-family: "Open Sans", sans-serif;
@@ -636,22 +730,83 @@ a{
     .pricing_card {
         width: 283px;
     }
-@media screen and (max-width: 768px){
+}
+@media screen and (max-width: 1024px){
     .container {
-        width: 550px;
+        width: 730px;
+    }
+    .navbar{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    /* БУРГЕР */
+
+    .nav_menu{
+        overflow: hidden;
+        max-height: 0;
+        transform: 0.5s;
+        position: absolute;
+        top: 120px;
+        z-index: 99;
+        transition: 0.5s;
+        box-shadow: 0px 0px 25px -12px  black;
+    }
+    .nav_link{
+        color: black;
+        font-size: 20px;
     }
     .nav_list{
-        display: none;
+        padding-top: 20px;
+        padding-bottom: 25px;
+        padding-left: 10px;
+        padding-right: 10px;
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        border-radius: 10px;
     }
+    .burger{
+        display: block;
+        font-size: 45px;
+        color: white;
+    }
+
+    /* БУРГЕР */
+
     .header_button{
         margin-bottom: 20px;
     }
-    .services_card{
-        width: 250px;
-        margin-left: 25px;
+    .services{
+        padding-bottom: 0;
     }
-    .customiz_img img {
-        left: -682px;
+    .sevices_cards{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .customiz{
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+    .customiz_cards{
+        justify-content: center;
+    }
+
+
+    .swiper-wrapper{
+        width: 700px;
+    }
+
+
+    .customiz_img {
+        display: none;
+    }
+    .customiz_card_text{
+        width: auto;
+    }
+    .customiz_title{
+        width: 400px;
     }
     .custumer_cards::before{
         display: none;
@@ -662,6 +817,13 @@ a{
     .download_heading{
         display: flex;
         flex-wrap: wrap;
+    }
+    .download_img img{
+        width: 90%;
+    }
+    .download_description{
+        width: 400px;
+        font-size: 15px;
     }
     .pricing_cards {
         display: flex;
@@ -680,29 +842,290 @@ a{
         margin-bottom: 50px;
     }
 }
-@media screen and (max-width: 576px){
+@media screen and (max-width: 768px){
     .container {
-        width: 100%;
+        width: auto;
+    }
+    .navbar{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    /* БУРГЕР */
+
+    .nav_menu{
+        overflow: hidden;
+        max-height: 0;
+        transform: 0.5s;
+        position: absolute;
+        top: 120px;
+        z-index: 99;
+        transition: 0.5s;
+        box-shadow: 0px 0px 25px -12px  black;
+    }
+    .nav_link{
+        color: black;
+        font-size: 20px;
+    }
+    .nav_list{
+        padding-top: 20px;
+        padding-bottom: 25px;
+        padding-left: 10px;
+        padding-right: 10px;
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        border-radius: 10px;
+    }
+    .burger{
+        display: block;
+        font-size: 45px;
+        color: white;
+    }
+
+    /* БУРГЕР */
+
+    .header_button{
+        margin-bottom: 20px;
+    }
+    .services{
+        padding-bottom: 0;
     }
     .sevices_cards{
         display: flex;
-        flex-wrap: wrap;
-        align-items: center;
         flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
     .sevices_card{
-        width: 286px;
+        width: auto;
+        margin-bottom: 35px;
+    }
+    .customiz{
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+    .customiz_cards{
+        display: flex;
+        flex-direction: column;
+    }
+    .customiz_img {
+        display: none;
+    }
+    .customiz_card_text{
+        width: auto;
+    }
+    .customiz_title{
+        width: 400px;
+    }
+    .custumer_cards::before{
+        display: none;
+    }
+    .custumer_cards::after{
+        display: none;
+    }
+    .download_heading{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .download_img img{
+        width: 90%;
+    }
+    .download_description{
+        width: 400px;
+        font-size: 15px;
+    }
+    .pricing_cards {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .pricing_card{
+        width: 335px;
+        margin-bottom: 55px;
+    }
+    .sub_cards_list {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .sub_card_list {
         margin-bottom: 50px;
     }
-    .custumer_card{
-        width: 502px;
-        height: 374px;
-        line-height: 30px;
+    .swiper-cards{
+        width: 300px;
     }
+    .custumer_card {
+        width: 356px;
+    }
+}
 @media screen and (max-width: 425px){
     .container {
-        width: 100%;
+        width: auto;
     }
+    .navbar{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .logo{
+        width: 145px;
+        height: 45px;
+    }
+    /* БУРГЕР */
+
+    .nav_menu{
+        overflow: hidden;
+        max-height: 0;
+        transform: 0.5s;
+        position: absolute;
+        top: 120px;
+        z-index: 99;
+        transition: 0.5s;
+        box-shadow: 0px 0px 25px -12px  black;
+    }
+    .nav_link{
+        color: black;
+        font-size: 20px;
+    }
+    .nav_list{
+        padding-top: 20px;
+        padding-bottom: 25px;
+        padding-left: 10px;
+        padding-right: 10px;
+        display: flex;
+        flex-direction: column;
+        background-color: white;
+        border-radius: 10px;
+    }
+    .burger{
+        display: block;
+        font-size: 45px;
+        color: white;
+    }
+
+    /* БУРГЕР */
+
+    .header_button{
+        margin-bottom: 20px;
+    }
+    .header_img{
+        display: none;
+    }
+    .services{
+        padding-bottom: 0;
+    }
+    .sevices_cards{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .sevices_card{
+        width: 350px;
+        margin-bottom: 35px;
+    }
+    .customiz{
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+    .customiz_cards{
+        display: flex;
+        flex-direction: column;
+    }
+    .customiz_img {
+        display: none;
+    }
+    .customiz_card_text{
+        width: auto;
+    }
+    .customiz_title{
+        width: 400px;
+    }
+    .mySwiper{
+        width: 340px!important;
+    }
+    .custumer_card {
+        width: 375px;
+    }
+    .custumer_cards::before{
+        display: none;
+    }
+    .custumer_cards::after{
+        display: none;
+    }
+    .download_heading{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .download_img img{
+        width: 90%;
+    }
+    .download_description{
+        width: 340px;
+        font-size: 15px;
+    }
+    .download_text{
+        width: auto;
+    }
+
+    .pricing_cards {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .pricing_card{
+        width: 335px;
+        margin-bottom: 55px;
+    }
+    .sub_cards_list {
+        display: flex;
+        flex-wrap: wrap;
+        width: 360px;
+    }
+    .sub_card_list {
+        margin-bottom: 50px;
+    }
+    .footer_list{
+        flex-wrap: wrap;
+        padding-left: 15px;
+    }
+}
+@media screen and (max-width: 375px){
+    .container {
+        width: auto;
+    }
+        /* БУРГЕР */
+
+        .nav_menu{
+            overflow: hidden;
+            max-height: 0;
+            transform: 0.5s;
+            position: absolute;
+            right: 0;
+            top: 120px;
+            z-index: 99;
+            transition: 0.5s;
+            box-shadow: 0px 0px 25px -12px  black;
+        }
+        .nav_link{
+            color: black;
+            font-size: 20px;
+        }
+        .nav_list{
+            height: 150px;
+            padding-top: 10px;
+            display: flex;
+            flex-direction: column;
+            background-color: white;
+            border-radius: 10px;
+            margin: 0 auto;
+        }
+        .burger{
+            display: block;
+            font-size: 45px;
+            color: white;
+        }
+        
+        /* БУРГЕР */
+        
     .header_text{
         padding: 15px;
     }
@@ -718,28 +1141,48 @@ a{
     .customiz_list {
         padding-bottom: 0;
     }
+    .customiz_card_text{
+        width: auto;
+        text-align: center;
+    }
     .customiz_beginer {
-        font-size: 30px;
+        font-size: 25px;
     }
     .customiz_title {
+        width: auto;
         padding-bottom: 15px;
     }
     .services_item{
         font-size: 22px;
     }
-    .services_text{
-        font-size: 18px;
+    .download_heading{
+        padding-top: 0px;
     }
-    .services_card {
-        width: 385px;
-        margin-left: 25px;
+    .sevices_text{
+        width: auto;
+        margin: 0;
+    }
+    .custumer_buttons{
+        margin-top: 100px;
+        margin-bottom: 50px;
+    }
+    .custumer{
+        padding-bottom: 0;
+        margin-bottom: 100px;
     }
     .custumer_card {
-        width: 376px;
-        height: 436px;
+        width: 325px;
+        height: 430px;
+    }
+
+    .download_img{
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     .download_img img{
-        width: 100%;
+        width: 90%;
+        
     }
     .download_start, .download_beginer{
         text-align: center;
@@ -747,5 +1190,20 @@ a{
     .download_description{
         padding-left: 10px;
         padding-right: 10px;
+        width: 280px;
+    }
+    .pricing_card{
+        width: 250px;
+    }
+    .button_form{
+        text-align: left;
+        margin-left: 25px;
+        width: 250px;
+        
+    }
+    #form_button{
+        padding-left: 0;
+        padding-right: 0;
+        text-align: center;
     }
 }

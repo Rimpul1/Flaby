@@ -8,8 +8,10 @@
     <title>Document</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&family=Roboto+Slab&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600;700&family=Roboto+Slab&display=swap"
+        rel="stylesheet">
     <link rel="stylesheet" href="fontawesome-free-6.0.0-web/css/all.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css" />
     <link rel="stylesheet" href="style.css">
 </head>
 
@@ -18,19 +20,29 @@
     <nav>
         <div class="container">
             <div class="navbar">
-                <img href="/"  class="logo" img src="./img/Flaby.png" alt=""></a>
-                <ul class="nav_list">
-                    <link class="nav_item"><a href="#" class="nav_link">HOME</a>
-                    <link class="nav_item"><a href="#" class="nav_link">SERVICES</a>
-                    <link class="nav_item"><a href="#" class="nav_link">PORTFOLIO</a>
-                    <link class="nav_item"><a href="#" class="nav_link">BLOG</a>
-                    <link class="nav_item"><a href="#" class="nav_link">CONTACT US</a>
-                    <button class="button_nav">LOGIN</button>
-                </ul>
+
+
+                <img href="/" class="logo" img src="./img/Flaby.png" alt=""></a>
+
+                <div class="burger">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+
+                <div class="nav_menu">
+
+                    <ul class="nav_list">
+                        <li class="nav_item"><a href="#home" class="nav_link">HOME</a></li>
+                        <li class="nav_item"><a href="#our_sevices" class="nav_link">SERVICES</a></li>
+                        <li class="nav_item"><a href="#pricing" class="nav_link">PRICING</a></li>
+                        <li class="nav_item"><a href="#sub" class="nav_link">CONTACT US</a></li>
+
+                    </ul>
+                </div>
+                <button class="button_nav">LOGIN</button>
             </div>
         </div>
     </nav>
-    <header>
+    <header id="home">
         <div class="header_headphone"><img src="./img/Headphones.png" alt="2"></div>
         <div class="header_earphone"><img src="./img/Earphones.png" alt="3"></div>
         <div class="header_pencil"><img src="./img/Pencil-1.png" alt="2"></div>
@@ -42,7 +54,7 @@
                     <p class="header_description">A Modern Flat design corporate template<br>for free download with all
                         great features<br>and trendy look.</p>
                     <div class="header_buttons">
-                        <button class="header_button" ><img src="./img/google_play.png">Google Store</button>
+                        <button class="header_button"><img src="./img/google_play.png">Google Store</button>
                         <button class="header_button2">Learn More</button>
                     </div>
                 </div>
@@ -50,7 +62,7 @@
             </div>
         </div>
     </header>
-    <section class="our_sevices">
+    <section class="our_sevices" id="our_sevices">
         <div class="container">
             <div class="section_heading">
                 <h5 class="section_title">Welcome to</h5>
@@ -77,11 +89,11 @@
                 </div>
             </div>
     </section>
-    <section class="customiz">
+    <section class="customiz" id="customiz">
         <div class="container">
-        <div class="customiz_cards">
-            <div class="customiz_img">
-            <img src="./img/iPhone.png" alt="3"></div>
+            <div class="customiz_cards">
+                <div class="customiz_img">
+                    <img src="./img/iPhone.png" alt="3"></div>
                 <div class="customiz_card_text">
                     <h4 class="customiz_start">We have great features with</h4>
                     <h1 class="customiz_beginer">Unlimited Customization Features</h1>
@@ -98,7 +110,7 @@
             </div>
         </div>
     </section>
-    <section class="services">
+    <section class="services" id="services">
         <div class="container">
             <div class="section_heading">
                 <h5 class="section_title">View Our Latest</h5>
@@ -107,221 +119,297 @@
             <div class="services_cards">
                 <div class="services_card">
                     <div class="services_card_img">
-                    <img src="./img/idea.png" alt=""></div>
+                        <img src="./img/idea.png" alt=""></div>
                     <div class="services_card_text">
                         <h3 class="services_item">Idea Developing</h3>
-                        <p class="services_text">There are many variations of passages of Lorem Ipsum available, but the majorityalteration in
+                        <p class="services_text">There are many variations of passages of Lorem Ipsum available, but the
+                            majorityalteration in
                             some form with design</p>
-            </div>
-            </div>
+                    </div>
+                </div>
                 <div class="services_card">
                     <div class="services_card_img">
                         <img src="./img/Browser.png" alt=""></div>
-                        <div class="services_card_text">
-                            <h3 class="services_item">Idea Developing</h3>
-                            <p class="services_text">There are many variations of passages of Lorem Ipsum available, but the majorityalteration in
-                                some form with design</p>
-            </div>
-            </div>
+                    <div class="services_card_text">
+                        <h3 class="services_item">Idea Developing</h3>
+                        <p class="services_text">There are many variations of passages of Lorem Ipsum available, but the
+                            majorityalteration in
+                            some form with design</p>
+                    </div>
+                </div>
                 <div class="services_card">
                     <div class="services_card_img">
                         <img src="./img/Game.png" alt=""></div>
-                        <div class="services_card_text">
-                            <h3 class="services_item">Idea Developing</h3>
-                            <p class="services_text">There are many variations of passages of Lorem Ipsum available, but the majorityalteration in
-                                some form with design</p>
-            </div>
-            </div>
+                    <div class="services_card_text">
+                        <h3 class="services_item">Idea Developing</h3>
+                        <p class="services_text">There are many variations of passages of Lorem Ipsum available, but the
+                            majorityalteration in
+                            some form with design</p>
+                    </div>
+                </div>
                 <div class="services_card">
                     <div class="services_card_img">
                         <img src="./img/respon.png" alt=""></div>
-                        <div class="services_card_text">
-                            <h3 class="services_item">Idea Developing</h3>
-                            <p class="services_text">There are many variations of passages of Lorem Ipsum available, but the majorityalteration in
-                                some form with design</p>
-            </div>
-            </div>
+                    <div class="services_card_text">
+                        <h3 class="services_item">Idea Developing</h3>
+                        <p class="services_text">There are many variations of passages of Lorem Ipsum available, but the
+                            majorityalteration in
+                            some form with design</p>
+                    </div>
+                </div>
                 <div class="services_card">
                     <div class="services_card_img">
                         <img src="./img/Cart.png" alt=""></div>
-                        <div class="services_card_text">
-                            <h3 class="services_item">Idea Developing</h3>
-                            <p class="services_text">There are many variations of passages of Lorem Ipsum available, but the majorityalteration in
-                                some form with design</p>
-            </div>
-            </div>
+                    <div class="services_card_text">
+                        <h3 class="services_item">Idea Developing</h3>
+                        <p class="services_text">There are many variations of passages of Lorem Ipsum available, but the
+                            majorityalteration in
+                            some form with design</p>
+                    </div>
+                </div>
                 <div class="services_card">
                     <div class="services_card_img">
                         <img src="./img/Gift.png" alt=""></div>
-                        <div class="services_card_text">
-                            <h3 class="services_item">Idea Developing</h3>
-                            <p class="services_text">There are many variations of passages of Lorem Ipsum available, but the majorityalteration in 
-                                some form with design</p>
-            </div>
-        </div>
+                    <div class="services_card_text">
+                        <h3 class="services_item">Idea Developing</h3>
+                        <p class="services_text">There are many variations of passages of Lorem Ipsum available, but the
+                            majorityalteration in
+                            some form with design</p>
+                    </div>
+                </div>
     </section>
-    <section class="custumer">
+    <section class="custumer" id="custumer">
         <div class="container">
             <div class="section_heading">
                 <h5>Get know About</h5>
                 <h3>WHAT COSTUMER SAY</h3>
             </div>
-                <div class="custumer_cards">
-                    <div class="custumer_card">
-                    <div class="custumer_img">
-                        <img src="./img/author-image.png" alt=""></div>
-                    <div class="custumer_serd">
-                    <h4 class="custumer_title">Sourabh B.</h4>
-                    <p class="custumer_text">Co Founder of Mew</p>
-                    <p class="costumer_descrip">Great Team with great experience,
-                        i would reguler recommended to all that you will get better support
-                        by working with this awesome team and their expert members :)</p>
-                </div>
-        </div>
-        </div>
+
+
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                            <div class="custumer_card">
+                                <div class="custumer_img">
+                                    <img src="./img/author-image.png" alt=""></div>
+                                <div class="custumer_serd">
+                                    <h4 class="custumer_title">Sourabh B.</h4>
+                                    <p class="custumer_text">Co Founder of Mew</p>
+                                    <p class="costumer_descrip">Great Team with great experience,
+                                        i would reguler recommended to all that you will get better support
+                                        by working with this awesome team and their expert members :)</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    <div class="swiper-slide">
+                            <div class="custumer_card">
+                                <div class="custumer_img">
+                                    <img src="./img/author-image.png" alt=""></div>
+                                <div class="custumer_serd">
+                                    <h4 class="custumer_title">Sourabh B.</h4>
+                                    <p class="custumer_text">Co Founder of Mew</p>
+                                    <p class="costumer_descrip">Great Team with great experience,
+                                        i would reguler recommended to all that you will get better support
+                                        by working with this awesome team and their expert members :)</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    <div class="swiper-slide">
+                            <div class="custumer_card">
+                                <div class="custumer_img">
+                                    <img src="./img/author-image.png" alt=""></div>
+                                <div class="custumer_serd">
+                                    <h4 class="custumer_title">Sourabh B.</h4>
+                                    <p class="custumer_text">Co Founder of Mew</p>
+                                    <p class="costumer_descrip">Great Team with great experience,
+                                        i would reguler recommended to all that you will get better support
+                                        by working with this awesome team and their expert members :)</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    <div class="swiper-slide">
+                            <div class="custumer_card">
+                                <div class="custumer_img">
+                                    <img src="./img/author-image.png" alt=""></div>
+                                <div class="custumer_serd">
+                                    <h4 class="custumer_title">Sourabh B.</h4>
+                                    <p class="custumer_text">Co Founder of Mew</p>
+                                    <p class="costumer_descrip">Great Team with great experience,
+                                        i would reguler recommended to all that you will get better support
+                                        by working with this awesome team and their expert members :)</p>
+                                </div>
+                            </div>
+                        </div>
+
+                    <div class="swiper-slide">
+                            <div class="custumer_card">
+                                <div class="custumer_img">
+                                    <img src="./img/author-image.png" alt=""></div>
+                                <div class="custumer_serd">
+                                    <h4 class="custumer_title">Sourabh B.</h4>
+                                    <p class="custumer_text">Co Founder of Mew</p>
+                                    <p class="costumer_descrip">Great Team with great experience,
+                                        i would reguler recommended to all that you will get better support
+                                        by working with this awesome team and their expert members :)</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+            </div>
+
+
+
+
             <div class="custumer_buttons">
                 <button class="custumer_button1"><i class="fa-solid fa-arrow-left"></i>Previous</button>
-                <button class="custumer_button2"><i class="fa-solid fa-arrow-right"></i>Next</button>
+                <button class="custumer_button2">Next<i class="fa-solid fa-arrow-right"></i></button>
             </div>
-    </div>
+        </div>
     </section>
-    <section class="download">
+    <section class="download" id="download">
         <div class="container">
             <div class="download_heading">
-            <div class="download_text">
-                <h4 class="download_start">Feel free to download our</h4>
-                <h2 class="download_beginer">Great Resourse for free</h2>
-                <p class="download_description">There are many variations of passages of 
-                    Lorem Ipsum available & majorityalteration</p>
-                <p class="download_description">Contrary to popular belief, Lorem Ipsum is not simply random text. 
-                    It has roots in a piece.It has roots in a piece.It has roots in a piece.It has roots in a piece.</p>
+                <div class="download_text">
+                    <h4 class="download_start">Feel free to download our</h4>
+                    <h2 class="download_beginer">Great Resourse for free</h2>
+                    <p class="download_description">There are many variations of passages of
+                        Lorem Ipsum available & majorityalteration</p>
+                    <p class="download_description">Contrary to popular belief, Lorem Ipsum is not simply random text.
+                        It has roots in a piece.It has roots in a piece.It has roots in a piece.It has roots in a piece.
+                    </p>
                 </div>
-                <div class="download_img"><img src="./img/mockup.png" alt=""></div>
-        </div>
+                <div class="download_img">
+                    <img src="./img/mockup.png" alt=""></div>
+            </div>
         </div>
     </section>
-    <section class="pricing">
+    <section class="pricing" id="pricing">
         <div class="container">
             <div class="section_heading">
                 <h5 class="pricing_title">Get Idea About</h5>
                 <h3 class="pricing_text">PRICING PLAN</h3>
-        </div>
+            </div>
             <div class="pricing_cards">
-            <div class="pricing_card">
-            <img src="./img/Book.png" alt="">
-            <div class="pricing_card_head">
-                <h3 class="pricing_card_title">Student</h3>
-                    <h2 class="pricing_card_text"><span>39</span>/mo</h2>
-                    <ul class="pricing_card_list">
-                        <li class="pricing_card_item">6 GB storage</li>
-                        <li class="pricing_card_item">Fast Brandwidht</li>
-                        <li class="pricing_card_item">Responsive</li>
-                        <li class="pricing_card_item">Customization</li>
-                </ul>
-            <button class="pricing_button">SIGN UP</button>
+                <div class="pricing_card">
+                    <img src="./img/Book.png" alt="">
+                    <div class="pricing_card_head">
+                        <h3 class="pricing_card_title">Student</h3>
+                        <h2 class="pricing_card_text"><span>39</span>/mo</h2>
+                        <ul class="pricing_card_list">
+                            <li class="pricing_card_item">6 GB storage</li>
+                            <li class="pricing_card_item">Fast Brandwidht</li>
+                            <li class="pricing_card_item">Responsive</li>
+                            <li class="pricing_card_item">Customization</li>
+                        </ul>
+                        <button class="pricing_button">SIGN UP</button>
+                    </div>
+                </div>
+                <div class="pricing_card">
+                    <img src="./img/shopping-Bag.png" alt="">
+                    <div class="pricing_card_head">
+                        <h3 class="pricing_card_title">Professional</h3>
+                        <h2 class="pricing_card_text"><span>59</span>/mo</h2>
+                        <ul class="pricing_card_list">
+                            <li class="pricing_card_item">6 GB storage</li>
+                            <li class="pricing_card_item">Fast Brandwidht</li>
+                            <li class="pricing_card_item">Responsive</li>
+                            <li class="pricing_card_item">Customization</li>
+                        </ul>
+                        <button class="pricing_button">SIGN UP</button>
+                    </div>
+                </div>
+                <div class="pricing_card">
+                    <img src="./img/bag.png" alt="">
+                    <div class="pricing_card_head">
+                        <h3 class="pricing_card_title">Unlimited</h3>
+                        <h2 class="pricing_card_text"><span>99</span>/mo</h2>
+                        <ul class="pricing_card_list">
+                            <li class="pricing_card_item">6 GB storage</li>
+                            <li class="pricing_card_item">Fast Brandwidht</li>
+                            <li class="pricing_card_item">Responsive</li>
+                            <li class="pricing_card_item">Customization</li>
+                        </ul>
+                        <button class="pricing_button">SIGN UP</button>
+                    </div>
+                </div>
             </div>
-        </div>
-            <div class="pricing_card">
-            <img src="./img/shopping-Bag.png" alt="">
-            <div class="pricing_card_head">
-                    <h3 class="pricing_card_title">Professional</h3>
-                    <h2 class="pricing_card_text"><span>59</span>/mo</h2>
-                    <ul class="pricing_card_list">
-                        <li class="pricing_card_item">6 GB storage</li>
-                        <li class="pricing_card_item">Fast Brandwidht</li>
-                        <li class="pricing_card_item">Responsive</li>
-                        <li class="pricing_card_item">Customization</li>
-                    </ul>
-            <button class="pricing_button">SIGN UP</button>
-            </div>
-        </div>
-            <div class="pricing_card">
-            <img src="./img/bag.png" alt="">
-            <div class="pricing_card_head">
-                    <h3 class="pricing_card_title">Unlimited</h3>
-                    <h2 class="pricing_card_text"><span>99</span>/mo</h2>
-                    <ul class="pricing_card_list">
-                        <li class="pricing_card_item">6 GB storage</li>
-                        <li class="pricing_card_item">Fast Brandwidht</li>
-                        <li class="pricing_card_item">Responsive</li>
-                        <li class="pricing_card_item">Customization</li>
-                </ul>
-            <button class="pricing_button">SIGN UP</button>
-            </div>
-        </div>
-        </div>
     </section>
-    <section class="sub">
-    <div class="container">
-        <div class="section_heading">
-            <h5 class="pricing_title">For latest newsletter</h5>
-            <h3 class="pricing_text">SUBSCRIBE NOW</h3>
+    <section class="sub" id="sub">
+        <div class="container">
+            <div class="section_heading">
+                <h5 class="pricing_title">For latest newsletter</h5>
+                <h3 class="pricing_text">SUBSCRIBE NOW</h3>
+            </div>
+            <form class="sub_form">
+                <input id="form_name" type="text" placeholder="Your NAME">
+                <input id="form_mail" type="text" placeholder="example@gmail.com">
+                <input id="form_button" class="button_form" type="submit" value="SUBSCRIBE">
+            </form>
         </div>
-        <form class="sub_form">
-            <input id="form_name" type="text" placeholder="Your NAME">
-            <input id="form_mail" type="text" placeholder="example@gmail.com">
-            <input id="form_button" class="button_form" type="submit" value="SUBSCRIBE">
-        </form>
-    </div>
     </section>
     <footer>
-    <div class="container">
-    <div class="sub_cards_list">
-        <div class="sub_card_list">
-            <img src="./img/logo2.png" alt="">
-            <h4 class="sub_text">Flaby is a free flat template and 
-                available for free downloads
-                but please don’t use for sell</h4>
-                <a class="sub_card_icons" href="#"><i
-                    class="fa-brands fa-facebook"></i></a>
-                <a class="sub_card_icons" href="#">
-                    <i class="fa-brands fa-twitter"></i></a>
-                <a class="sub_card_icons" href="#">
-                    <i class="fa-brands fa-google-plus"></i></a>
+        <div class="container">
+            <div class="sub_cards_list">
+                <div class="sub_card_list">
+                    <img src="./img/logo2.png" alt="">
+                    <h4 class="sub_text">Flaby is a free flat template and
+                        available for free downloads
+                        but please don’t use for sell</h4>
+                    <a class="sub_card_icons" href="#"><i class="fa-brands fa-facebook"></i></a>
+                    <a class="sub_card_icons" href="#">
+                        <i class="fa-brands fa-twitter"></i></a>
+                    <a class="sub_card_icons" href="#">
+                        <i class="fa-brands fa-google-plus"></i></a>
+                </div>
+                <ul class="sub_card_list">
+                    <h3 class="sub_title">Userful link</h3>
+                    <li class="sub_card_item"><a href="#" class="sub_link">Resource</a></li>
+                    <li class="sub_card_item"><a href="#" class="sub_link">Downloads</a></li>
+                    <li class="sub_card_item"><a href="#" class="sub_link">Graphics</a></li>
+                    <li class="sub_card_item"><a href="#" class="sub_link">Templates</a></li>
+                    <li class="sub_card_item"><a href="#" class="sub_link">UI colors</a></li>
+                </ul>
+                <ul class="sub_card_list">
+                    <h3 class="sub_title">Free Goods</h3>
+                    <li class="sub_card_item"><a href="#" class="sub_link">Resource</a></li>
+                    <li class="sub_card_item"><a href="#" class="sub_link">Downloads</a></li>
+                    <li class="sub_card_item"><a href="#" class="sub_link">Graphics</a></li>
+                    <li class="sub_card_item"><a href="#" class="sub_link">Templates</a></li>
+                    <li class="sub_card_item"><a href="#" class="sub_link">UI colors</a></li>
+                </ul>
+                <ul class="sub_card_list">
+                    <h3 class="sub_title">Elements</h3>
+                    <li class="sub_card_item"><a href="#" class="sub_link">Resource</a></li>
+                    <li class="sub_card_item"><a href="#" class="sub_link">Downloads</a></li>
+                    <li class="sub_card_item"><a href="#" class="sub_link">Graphics</a></li>
+                    <li class="sub_card_item"><a href="#" class="sub_link">Templates</a></li>
+                    <li class="sub_card_item"><a href="#" class="sub_link">UI colors</a></li>
+                </ul>
+                <ul class="sub_card_list">
+                    <h3 class="sub_title">About Us</h3>
+                    <li class="sub_card_item"><a href="#" class="sub_link">Resource</a></li>
+                    <li class="sub_card_item"><a href="#" class="sub_link">Downloads</a></li>
+                    <li class="sub_card_item"><a href="#" class="sub_link">Graphics</a></li>
+                    <li class="sub_card_item"><a href="#" class="sub_link">Templates</a></li>
+                    <li class="sub_card_item"><a href="#" class="sub_link">UI colors</a></li>
+                </ul>
+            </div>
+            <div class="footer_copy">
+                <ul class="footer_list">
+                    <li class="footer_item">&copy; Copyright 2017</li>
+                    <li class="footer_item">All rights reserved</li>
+                    <li class="footer_item">Template Designed By Sourabh Barua</li>
+                </ul>
+            </div>
         </div>
-        <ul class="sub_card_list">
-            <h3 class="sub_title">Userful link</h3>
-        <li class="sub_card_item"><a href="#" class="sub_link">Resource</a></li>
-        <li class="sub_card_item"><a href="#" class="sub_link">Downloads</a></li>
-        <li class="sub_card_item"><a href="#" class="sub_link">Graphics</a></li>
-        <li class="sub_card_item"><a href="#" class="sub_link">Templates</a></li>
-        <li class="sub_card_item"><a href="#" class="sub_link">UI colors</a></li>
-    </ul>
-        <ul class="sub_card_list">
-            <h3 class="sub_title">Free Goods</h3>
-        <li class="sub_card_item"><a href="#" class="sub_link">Resource</a></li>
-        <li class="sub_card_item"><a href="#" class="sub_link">Downloads</a></li>
-        <li class="sub_card_item"><a href="#" class="sub_link">Graphics</a></li>
-        <li class="sub_card_item"><a href="#" class="sub_link">Templates</a></li>
-        <li class="sub_card_item"><a href="#" class="sub_link">UI colors</a></li>
-    </ul>
-        <ul class="sub_card_list">
-            <h3 class="sub_title">Elements</h3>
-        <li class="sub_card_item"><a href="#" class="sub_link">Resource</a></li>
-        <li class="sub_card_item"><a href="#" class="sub_link">Downloads</a></li>
-        <li class="sub_card_item"><a href="#" class="sub_link">Graphics</a></li>
-        <li class="sub_card_item"><a href="#" class="sub_link">Templates</a></li>
-        <li class="sub_card_item"><a href="#" class="sub_link">UI colors</a></li>
-    </ul>
-        <ul class="sub_card_list">
-            <h3 class="sub_title">About Us</h3>
-        <li class="sub_card_item"><a href="#" class="sub_link">Resource</a></li>
-        <li class="sub_card_item"><a href="#" class="sub_link">Downloads</a></li>
-        <li class="sub_card_item"><a href="#" class="sub_link">Graphics</a></li>
-        <li class="sub_card_item"><a href="#" class="sub_link">Templates</a></li>
-        <li class="sub_card_item"><a href="#" class="sub_link">UI colors</a></li>
-    </ul>
-    </div>
-        <div class="footer_copy">
-            <ul class="footer_list">
-                <li class="footer_item">&copy; Copyright 2017</li>
-                <li class="footer_item">All rights reserved</li>
-                <li class="footer_item">Template Designed By Sourabh Barua</li>
-    </ul>
         </div>
-</div>
-</div>
     </footer>
-    </body>
+
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <script src="sript.js"></script>
+</body>
 
 </html>
